@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorer les Projets</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="projets">
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="Help us create a microfinance cartel _ Logo design contest (1).jpeg" alt="Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="A propos.html">À propos</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="Compte.html">Mon compte</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Rechercher des projets...">
+                <button><i class="fas fa-search"> Envoyer</i></button>
+            </div>
+        </nav>
+    </header>
+    <div class="explore-container">
+        <h1>Explorer les Projets</h1>
+
+        <!-- Filtres de recherche -->
+        <section class="filters">
+        
+            <form id="filterForm">
+                <!-- Filtre par catégorie -->
+                <label for="category">Catégorie :</label>
+                <select id="category" name="category">
+                    <option value="">Toutes les catégories</option>
+                    <option value="bassine">Bassine</option>
+                    <option value="moulinex">Moulinex</option>
+                    <option value="casserole">Casserole</option>
+                    <option value="assiettes">Assiettes</option>
+                    <option value="plats">Plats</option>
+                </select>
+
+                <!-- Filtre par montant recherché -->
+                <label for="amount">Montant recherché (à partir de) :</label>
+                <input type="number" id="amount" name="amount" placeholder="Ex: 50">
+
+                <!-- Filtre par objectifs atteints -->
+                <label for="goal">Objectifs atteints :</label>
+                <select id="goal" name="goal">
+                    <option value="">Tous les projets</option>
+                    <option value="achieved">Objectifs atteints</option>
+                    <option value="not_achieved">Objectifs non atteints</option>
+                </select>
+
+                <button type="submit">Appliquer les filtres</button>
+            </form>
+        </section>
+
+        <!-- Grille des projets -->
+        <section class="projects-grid">
+            <h2>Résultats</h2>
+            <div id="projectsList" class="grid">
+                <!-- Les projets seront ajoutés dynamiquement par JavaScript -->
+            </div>
+        </section>
+
+        <!-- Section pour les fabricants -->
+        <section class="manufacturers">
+            <h2>Services de qualité à moindre coût</h2>
+            <p>Découvrez des fabricants qui proposent des services de qualité à des prix abordables.</p>
+            <ul id="manufacturersList">
+                <!-- Les fabricants seront ajoutés dynamiquement par JavaScript -->
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Liens utiles</h3>
+                <ul>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="#">Aide et FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: gddjame@gmail.com</p>
+                <p>Téléphone: +228 70 38 68 06 <br>+228 99 68 54 26</p>
+            </div>
+            <div class="footer-section">
+                <h3>Partenaires</h3>
+                <div class="partner-logos">
+                    <img src="logo du restaurant sur la lettre r avec chapeau de chef, symbole de cuillère et de fourchette pour signe de cuisine, icône de café, restaurant, image vectorielle d'entreprise de cuisine.jpeg" alt="Partenaire 1">
+                    <img src="302a3581-e6a7-4c6d-b48a-4c2606b5582d.jpeg" alt="Partenaire 2">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 VotreSite. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

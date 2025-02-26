@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de paiement</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="paiement">
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="Help us create a microfinance cartel _ Logo design contest (1).jpeg" alt="Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="A propos.html">À propos</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="Compte.html">Mon compte</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Rechercher des projets...">
+                <button><i class="fas fa-search"> Envoyer</i></button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="payment-container">
+        <h2 class="fp">Formulaire de Paiement</h2>
+        <form id="paymentForm">
+            <label for="country">Pays :</label>
+            <select id="country">
+                <option value="+228"> Togo (+228)</option>
+                <option value="+229"> Bénin (+229)</option>
+                <option value="+225"> Côte d'Ivoire (+225)</option>
+                <option value="+237"> Cameroun (+237)</option>
+                <option value="+226"> Burkina Faso (+226)</option>
+                <option value="+221"> Sénégal (+221)</option>
+            </select>
+
+            <label for="phone">Numéro :</label>
+            <input type="tel" id="phone" placeholder="Entrez votre numéro">
+
+            <label for="amount">Montant :</label>
+            <input type="number" id="amount" placeholder="Ex: 5000" required>
+
+            <label for="paymentMethod">Méthode de paiement :</label>
+            <select id="paymentMethod" required>
+                <option value="">Choisissez une méthode</option>
+                <option value="tmoney">T-Money</option>
+                <option value="flooz">Flooz</option>
+            </select>
+
+            <button type="submit">Payer</button>
+        </form>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Liens utiles</h3>
+                <ul>
+                    <li><a href="#">Conditions générales</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Aide et FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: gddjame@gmail.com</p>
+                <p>Téléphone: +228 70 38 68 06 <br>+228 99 68 54 26</p>
+            </div>
+            <div class="footer-section">
+                <h3>Partenaires</h3>
+                <div class="partner-logos">
+                    <img src="logo du restaurant sur la lettre r avec chapeau de chef, symbole de cuillère et de fourchette pour signe de cuisine, icône de café, restaurant, image vectorielle d'entreprise de cuisine.jpeg" alt="Partenaire 1">
+                    <img src="302a3581-e6a7-4c6d-b48a-4c2606b5582d.jpeg" alt="Partenaire 2">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 VotreSite. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

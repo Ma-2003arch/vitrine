@@ -280,6 +280,16 @@ function toggleAnswer(question) {
     answer.classList.toggle('show');
 }
 
+// Ajouter un gestionnaire d'événement pour les boutons "Voir plus"
+document.querySelectorAll('.btn-primary').forEach(button => {
+    button.addEventListener('click', (e) => {
+        e.preventDefault(); // Empêcher le comportement par défaut du lien
+        const projectCard = button.closest('.project-card');
+        const projectTitle = projectCard.querySelector('h3').textContent;
+        alert(`Vous avez cliqué sur : ${projectTitle}`);
+    });
+});
+
 
 
 

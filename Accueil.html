@@ -10,18 +10,32 @@
     
     <header>
         <nav class="navbar">
+            <!-- Logo -->
             <div class="logo">
-                <a href="index.html"><img src="Help us create a microfinance cartel _ Logo design contest (1).jpeg" alt="Logo"></a>
+                <a href="index.html">
+                    <img src="Help us create a microfinance cartel _ Logo design contest (1).jpeg" alt="Logo">
+                </a>
             </div>
-            <ul class="nav-links">
+    
+            <!-- Bouton hamburger pour les petits écrans -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+    
+            <!-- Liens de navigation -->
+            <ul class="nav-links" id="navLinks">
                 <li><a href="A propos.html">À propos</a></li>
-                <li><a href="projets.html"> Explorer les projets</a></li>
+                <li><a href="projets.html">Explorer les projets</a></li>
                 <li><a href="Compte.html">Mon compte</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+    
+            <!-- Barre de recherche -->
             <div class="search-bar">
                 <input type="text" placeholder="Rechercher des projets...">
-                <button><i class="fas fa-search"> Envoyer</i></button>
+                <button><i class="fas fa-search"></i> Envoyer</button>
             </div>
         </nav>
     </header>
